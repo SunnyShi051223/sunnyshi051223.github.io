@@ -15,6 +15,7 @@
             min-height: 100vh; 
             margin: 0;
             line-height: 1.8;
+            padding: 20px 0; /* 防止屏幕太小时上下贴边 */
         }
         .card {
             background-color: #ffffff;
@@ -24,6 +25,7 @@
             max-width: 600px;
             width: 90%;
             position: relative;
+            text-align: center; /* 让头部元素居中 */
         }
         .lang-switch {
             position: absolute;
@@ -44,9 +46,20 @@
             background: #0984e3;
             color: #fff;
         }
+        /* 头像样式 */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px auto;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border: 4px solid #fff;
+        }
         h1 {
             color: #2d3436;
             margin-bottom: 5px;
+            margin-top: 5px;
             font-size: 2.2em;
         }
         .subtitle {
@@ -63,6 +76,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            text-align: left; /* 让列表内容保持左对齐 */
         }
         .info-list li {
             margin-bottom: 15px;
@@ -74,10 +88,6 @@
             margin-right: 12px;
             font-size: 1.2em;
         }
-        .highlight {
-            font-weight: bold;
-            color: #0984e3;
-        }
     </style>
 </head>
 <body>
@@ -86,7 +96,8 @@
             <a href="en.html">English 🌐</a>
         </div>
         
-        <h1>杨子煜 [cite: 1]</h1>
+        <img src="https://github.com/SunnyShi051223.png" alt="头像" class="avatar">
+        <h1>杨子煜</h1>
         <div class="subtitle">
             <a href="mailto:yzy05_1223@whut.edu.cn">Email</a> | 
             <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
@@ -94,9 +105,9 @@
         
         <ul class="info-list">
             <li><span class="emoji">👋</span> <span><strong>Hi！</strong> 我是杨子煜，目前在武汉理工大学读「计算机科学与技术」的大三学生。</span></li>
-            <li><span class="emoji">🔍</span> <span><strong>雷达锁定：</strong> 计算机视觉 / 具身智能 / 智能感知。让机器看懂这个世界，是我觉得最酷的事！[cite: 6]</span></li>
-            <li><span class="emoji">🛠️</span> <span><strong>折腾日常：</strong> 搞过智能汽车的融合定位算法，用大模型做过农业 Agent，顺手还拿了几个国家级竞赛奖和国家专利。[cite: 21, 22, 25, 30, 32, 37]</span></li>
-            <li><span class="emoji">💻</span> <span><strong>技能树：</strong> 熟练使用 C/C++ 和 Python，能流畅吟唱 DL/ML/CV 等各种算法咒语。[cite: 44, 45]</span></li>
+            <li><span class="emoji">🔍</span> <span><strong>向往方向：</strong> 计算机视觉 / 具身智能 / 智能感知。让机器看懂这个世界，是我觉得最酷的事！</span></li>
+            <li><span class="emoji">🛠️</span> <span><strong>折腾日常：</strong> 搞过智能汽车的融合定位算法，用大模型做过农业 Agent，顺手还拿了几个国家级竞赛奖和国家专利。</span></li>
+            <li><span class="emoji">💻</span> <span><strong>技能树：</strong> 熟练使用 C/C++ 和 Python，能流畅吟唱 DL/ML/CV 等各种算法咒语。</span></li>
             <li><span class="emoji">🎓</span> <span><strong>当前状态：</strong> 正在积极准备保研推免，寻找一个能让我继续发光发热（写出优雅代码）的科研团队！</span></li>
         </ul>
     </div>
