@@ -15,6 +15,7 @@
             min-height: 100vh; 
             margin: 0;
             line-height: 1.8;
+            padding: 20px 0;
         }
         .card {
             background-color: #ffffff;
@@ -24,6 +25,7 @@
             max-width: 600px;
             width: 90%;
             position: relative;
+            text-align: center;
         }
         .lang-switch {
             position: absolute;
@@ -44,9 +46,20 @@
             background: #0984e3;
             color: #fff;
         }
+        /* Avatar Style */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px auto;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border: 4px solid #fff;
+        }
         h1 {
             color: #2d3436;
             margin-bottom: 5px;
+            margin-top: 5px;
             font-size: 2.2em;
         }
         .subtitle {
@@ -63,6 +76,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            text-align: left;
         }
         .info-list li {
             margin-bottom: 15px;
@@ -74,10 +88,6 @@
             margin-right: 12px;
             font-size: 1.2em;
         }
-        .highlight {
-            font-weight: bold;
-            color: #0984e3;
-        }
     </style>
 </head>
 <body>
@@ -86,17 +96,18 @@
             <a href="index.html">中 文 🐼</a>
         </div>
         
-        <h1>Ziyu Yang [cite: 1]</h1>
+        <img src="https://github.com/SunnyShi051223.png" alt="Ziyu Yang's Avatar" class="avatar">
+        <h1>Ziyu Yang</h1>
         <div class="subtitle">
             <a href="mailto:yzy05_1223@whut.edu.cn">Email</a> | 
             <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
         </div>
         
         <ul class="info-list">
-            <li><span class="emoji">👋</span> <span><strong>Hi there!</strong> I'm Ziyu Yang, a junior majoring in Computer Science at Wuhan University of Technology. </span></li>
-            <li><span class="emoji">🔍</span> <span><strong>Research Radar:</strong> Computer Vision / Embodied AI / Intelligent Perception. Teaching machines to understand the world is my ultimate jam! [cite: 6]</span></li>
-            <li><span class="emoji">🛠️</span> <span><strong>What I Build:</strong> Engineered fusion localization algorithms for autonomous vehicles, developed LLM Agents for smart agriculture, and grabbed a few national awards & patents along the way. [cite: 21, 22, 25, 30, 32, 37]</span></li>
-            <li><span class="emoji">💻</span> <span><strong>Tech Stack:</strong> Fluent in C/C++ and Python, always ready to cast spells with DL/ML/CV algorithms. [cite: 44, 45]</span></li>
+            <li><span class="emoji">👋</span> <span><strong>Hi there!</strong> I'm Ziyu Yang, a junior majoring in Computer Science at Wuhan University of Technology.</span></li>
+            <li><span class="emoji">🔍</span> <span><strong>Research Radar:</strong> Computer Vision / Embodied AI / Intelligent Perception. Teaching machines to understand the world is my ultimate jam!</span></li>
+            <li><span class="emoji">🛠️</span> <span><strong>What I Build:</strong> Engineered fusion localization algorithms for autonomous vehicles, developed LLM Agents for smart agriculture, and grabbed a few national awards & patents along the way.</span></li>
+            <li><span class="emoji">💻</span> <span><strong>Tech Stack:</strong> Fluent in C/C++ and Python, always ready to cast spells with DL/ML/CV algorithms.</span></li>
             <li><span class="emoji">🎓</span> <span><strong>Status:</strong> Currently gearing up for grad school recommendations—looking for an awesome lab where I can make an impact (and write cool code)!</span></li>
         </ul>
     </div>
