@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杨子煜的个人主页</title>
+    <title>杨子煜的个人频道</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            /* 使用 Flexbox 让内容在整个屏幕正中央 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,15 +16,14 @@
             margin: 0;
             line-height: 1.8;
         }
-        .container {
-            background-color: #fff;
-            padding: 40px 50px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            max-width: 650px;
-            text-align: justify;
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            max-width: 600px;
+            width: 90%;
             position: relative;
-            margin: 20px;
         }
         .lang-switch {
             position: absolute;
@@ -34,57 +32,73 @@
         }
         .lang-switch a {
             text-decoration: none;
-            color: #3498db;
+            color: #0984e3;
             font-size: 0.9em;
-            border: 1px solid #3498db;
-            padding: 4px 10px;
-            border-radius: 6px;
-            transition: all 0.3s;
+            font-weight: bold;
+            background: #e1f0fa;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all 0.2s;
         }
         .lang-switch a:hover {
-            background-color: #3498db;
+            background: #0984e3;
             color: #fff;
         }
         h1 {
-            color: #2c3e50;
-            text-align: center;
+            color: #2d3436;
             margin-bottom: 5px;
-            margin-top: 0;
+            font-size: 2.2em;
         }
         .subtitle {
-            text-align: center;
-            color: #7f8c8d;
-            margin-bottom: 25px;
-            font-size: 0.95em;
+            color: #636e72;
+            margin-bottom: 30px;
+            font-size: 1em;
         }
         .subtitle a {
-            color: #3498db;
+            color: #0984e3;
             text-decoration: none;
+            font-weight: bold;
         }
-        .subtitle a:hover {
-            text-decoration: underline;
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        p {
+        .info-list li {
+            margin-bottom: 15px;
             font-size: 1.05em;
-            text-indent: 2em; /* 首行缩进 */
+            display: flex;
+            align-items: flex-start;
+        }
+        .emoji {
+            margin-right: 12px;
+            font-size: 1.2em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0984e3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <div class="lang-switch">
-            <a href="en.html">English</a>
+            <a href="en.html">English 🌐</a>
         </div>
         
-        <h1>杨子煜 (Ziyu Yang)</h1>
+        <h1>杨子煜 [cite: 1]</h1>
         <div class="subtitle">
-            武汉理工大学 · 计算机科学与技术<br>
-            <a href="mailto:yzy05_1223@whut.edu.cn">yzy05_1223@whut.edu.cn</a> | <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
+            <a href="mailto:yzy05_1223@whut.edu.cn">Email</a> | 
+            <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
         </div>
         
-        <p>
-            大家好，我是杨子煜，目前就读于武汉理工大学计算机科学与技术专业（2023-2027），核心GPA达3.976/5.0。我的研究兴趣聚焦于<strong>计算机视觉、具身智能与智能感知</strong>领域。在校期间，我作为核心成员参与了国家自然科学基金项目“卫星信号受限下智能网联汽车协同定位”及国家重点研发计划子课题，并带队完成了“智慧农业辅助决策系统”的研发。通过这些科研项目与多项国家级、省级学科竞赛（如“挑战杯”、计算机设计大赛等），我积累了丰富的多传感器融合、路径规划及大语言模型（LLM）应用经验，并产出多项专利。我熟练掌握 C/C++、Python 及深度学习等算法技能，期待在未来的学术道路上继续探索前行。
-        </p>
+        <ul class="info-list">
+            <li><span class="emoji">👋</span> <span><strong>Hi！</strong> 我是杨子煜，目前在武汉理工大学读「计算机科学与技术」的大三学生。</span></li>
+            <li><span class="emoji">🔍</span> <span><strong>雷达锁定：</strong> 计算机视觉 / 具身智能 / 智能感知。让机器看懂这个世界，是我觉得最酷的事！[cite: 6]</span></li>
+            <li><span class="emoji">🛠️</span> <span><strong>折腾日常：</strong> 搞过智能汽车的融合定位算法，用大模型做过农业 Agent，顺手还拿了几个国家级竞赛奖和国家专利。[cite: 21, 22, 25, 30, 32, 37]</span></li>
+            <li><span class="emoji">💻</span> <span><strong>技能树：</strong> 熟练使用 C/C++ 和 Python，能流畅吟唱 DL/ML/CV 等各种算法咒语。[cite: 44, 45]</span></li>
+            <li><span class="emoji">🎓</span> <span><strong>当前状态：</strong> 正在积极准备保研推免，寻找一个能让我继续发光发热（写出优雅代码）的科研团队！</span></li>
+        </ul>
     </div>
 </body>
 </html>
