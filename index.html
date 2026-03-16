@@ -3,174 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杨子煜的个人主页 [cite: 1]</title>
+    <title>杨子煜的个人主页</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #34495e;
-            --accent-color: #3498db;
-            --bg-color: #fafafa;
-            --text-color: #333;
-        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            background-color: #f4f6f9;
+            color: #333;
+            /* 使用 Flexbox 让内容在整个屏幕正中央 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+            line-height: 1.8;
         }
-        header {
-            text-align: center;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        .container {
+            background-color: #fff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            max-width: 650px;
+            text-align: justify;
+            position: relative;
+            margin: 20px;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+        }
+        .lang-switch a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 0.9em;
+            border: 1px solid #3498db;
+            padding: 4px 10px;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        .lang-switch a:hover {
+            background-color: #3498db;
+            color: #fff;
         }
         h1 {
-            color: var(--primary-color);
+            color: #2c3e50;
+            text-align: center;
             margin-bottom: 5px;
-            font-size: 2.5em;
+            margin-top: 0;
         }
-        .contact-info a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .section-item {
-            margin-bottom: 20px;
-        }
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-        .item-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            color: var(--secondary-color);
-        }
-        .item-date {
-            color: #666;
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 25px;
             font-size: 0.95em;
         }
-        .item-subtitle {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 10px;
+        .subtitle a {
+            color: #3498db;
+            text-decoration: none;
         }
-        ul {
-            padding-left: 20px;
-            margin-top: 5px;
+        .subtitle a:hover {
+            text-decoration: underline;
         }
-        li {
-            margin-bottom: 8px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: var(--primary-color);
+        p {
+            font-size: 1.05em;
+            text-indent: 2em; /* 首行缩进 */
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>杨子煜 [cite: 1]</h1>
-        <p class="contact-info">
-            <strong>武汉理工大学 [cite: 5]</strong> | 计算机科学与技术 [cite: 9]<br>
-            邮箱: <a href="mailto:yzy05_1223@whut.edu.cn">yzy05_1223@whut.edu.cn [cite: 4]</a> | 
-            GitHub: <a href="https://github.com/SunnyShi051223" target="_blank">SunnyShi051223 [cite: 3]</a>
-        </p>
-        <p><strong>研究兴趣:</strong> 计算机视觉 / 具身智能 / 智能感知 [cite: 6]</p>
-    </header>
-
-    <section>
-        <h2>教育背景 [cite: 7]</h2>
-        <div class="section-item">
-            <div class="item-header">
-                <span class="item-title">武汉理工大学 [cite: 8]</span>
-                <span class="item-date">2023.09 - 2027.06 [cite: 10]</span>
-            </div>
-            <div class="item-subtitle">计算机科学与技术 | 本科 [cite: 9]</div>
-            <ul>
-                <li><span class="highlight">必修绩点:</span> GPA: 3.976/5.0 </li>
-                <li><span class="highlight">核心课程:</span> 高级语言程序设计(98.5)、算法分析与设计(95.4)、计算机组成与系统结构(93.0)、数据结构(90.4) [cite: 12]、操作系统(92.9)、机器学习与数据挖掘(92.8) [cite: 13]</li>
-                <li><span class="highlight">英语水平:</span> CET-6 (497分) [cite: 14]</li>
-                <li><span class="highlight">获奖荣誉:</span> 校级三好学生、校二等奖学金、校三等奖学金、院优秀学生干部 [cite: 15]</li>
-            </ul>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="en.html">English</a>
         </div>
-    </section>
-
-    <section>
-        <h2>科研经历 [cite: 16]</h2>
         
-        <div class="section-item">
-            <div class="item-header">
-                <span class="item-title">卫星信号受限下智能网联汽车协同定位 [cite: 17]</span>
-                <span class="item-date">2024.01 - 至今 [cite: 20]</span>
-            </div>
-            <div class="item-subtitle">导师国家自然科学基金项目 [cite: 19] | 核心工作与成果转化</div>
-            <ul>
-                <li>设计基于 UWB/IMU松耦合的位姿估计算法，引入深度学习残差网络处理非视距噪声，解决卫星条件受限环境下的定位误差问题；依据北斗短报文通信服务，重新设计报文通信协议，设计基于ZSTD的压缩编码算法，实现了PPP-B2b-RTK 高精度修正数据的实时低延时分发。 [cite: 21]</li>
-                <li><strong>[专利]</strong> 一种井下环境的超宽带测距定位方法及系统 (CN120583505), 2025.04 [cite: 22, 23, 24]</li>
-                <li><strong>[竞赛]</strong> 《海洋精密低成本高频定位系统》第十九届“挑战杯”揭榜挂帅擂台赛 <strong>国家级二等奖</strong>, 2025.10 [cite: 25]</li>
-            </ul>
+        <h1>杨子煜 (Ziyu Yang)</h1>
+        <div class="subtitle">
+            武汉理工大学 · 计算机科学与技术<br>
+            <a href="mailto:yzy05_1223@whut.edu.cn">yzy05_1223@whut.edu.cn</a> | <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
         </div>
-
-        <div class="section-item">
-            <div class="item-header">
-                <span class="item-title">行车环境状态估计不确定性量化方法 [cite: 26]</span>
-                <span class="item-date">2023.12 - 至今 [cite: 29]</span>
-            </div>
-            <div class="item-subtitle">导师国家重点研发计划子课题 [cite: 28] | 核心工作与成果转化</div>
-            <ul>
-                <li>构建 GNSS/INS/Vision/Mag多源数据融合感知架构，基于Error-State Kalman Filter 实现高频位姿更新，为下游定位规控提供厘米级状态反馈。设计基于自适应大邻域搜索的避障规划算法，并训练 FCN 网络拟合运动学约束，实现了受限空间下的实时路径规划。 [cite: 30]</li>
-                <li><strong>[专利]</strong> 一种多传感器融合定位方法和装置 (CN120703769), 2025.03 [cite: 32]</li>
-                <li><strong>[专利]</strong> 一种无人驾驶运输车路径规划方法和装置 (CN202511228219.1), 2025.05 [cite: 32]</li>
-                <li><strong>[竞赛]</strong> 《北斗惯性地磁视觉融合头盔》 第十八届中国大学生计算机设计大赛 <strong>国家级二等奖</strong>, 2025.07 [cite: 32]</li>
-            </ul>
-        </div>
-
-        <div class="section-item">
-            <div class="item-header">
-                <span class="item-title">智慧农业辅助决策系统 [cite: 33]</span>
-                <span class="item-date">2025.07 - 2025.11 [cite: 36]</span>
-            </div>
-            <div class="item-subtitle">项目负责人 [cite: 35] | 核心工作与成果转化</div>
-            <ul>
-                <li>构建基于 LangChain + Milvus 的RAG记忆模块，赋予Agent在农业场景的专业知识能力。改进轻量化视觉模型 RepViT，实现端侧实时病害识别。集成方言语音识别与LLM意图理解，为个体农户降低方言-文本-LLM的交互门槛。 [cite: 37]</li>
-                <li><strong>[竞赛]</strong> 《农业智能辅助系统》 第七届全球校园人工智能算法精英大赛 <strong>国家级三等奖</strong>, 2025.11 [cite: 39]</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>其他学科竞赛 [cite: 40]</h2>
-        <ul>
-            <li><strong>国家级二等奖</strong> | 第十六届全国大学生数学竞赛, 2024.11 [cite: 41]</li>
-            <li><strong>湖北省二等奖</strong> | 第十七届“华中杯”大学生数学建模挑战赛, 2025.05 [cite: 41]</li>
-            <li><strong>湖北省三等奖</strong> | 高教社杯全国大学生数学建模竞赛, 2025.09 [cite: 41]</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>专业技能 [cite: 42]</h2>
-        <ul>
-            <li><strong>科研工具:</strong> LaTeX, MATLAB, Zotero [cite: 43]</li>
-            <li><strong>算法技能:</strong> DL, ML, RL, CV, Optimization Algorithms [cite: 44]</li>
-            <li><strong>编程语言:</strong> C/C++, Python [cite: 45]</li>
-        </ul>
-    </section>
-
+        
+        <p>
+            大家好，我是杨子煜，目前就读于武汉理工大学计算机科学与技术专业（2023-2027），核心GPA达3.976/5.0。我的研究兴趣聚焦于<strong>计算机视觉、具身智能与智能感知</strong>领域。在校期间，我作为核心成员参与了国家自然科学基金项目“卫星信号受限下智能网联汽车协同定位”及国家重点研发计划子课题，并带队完成了“智慧农业辅助决策系统”的研发。通过这些科研项目与多项国家级、省级学科竞赛（如“挑战杯”、计算机设计大赛等），我积累了丰富的多传感器融合、路径规划及大语言模型（LLM）应用经验，并产出多项专利。我熟练掌握 C/C++、Python 及深度学习等算法技能，期待在未来的学术道路上继续探索前行。
+        </p>
+    </div>
 </body>
 </html>
