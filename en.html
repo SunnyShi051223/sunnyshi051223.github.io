@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziyu Yang - Academic Homepage</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --bg-color: #fafafa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-weight: bold;
+        }
+        .lang-switch a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border: 1px solid var(--accent-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .lang-switch a:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .section-item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--secondary-color);
+        }
+        .item-date {
+            color: #666;
+            font-size: 0.95em;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lang-switch">
+        <a href="index.html">中 文</a>
+    </div>
+
+    <header>
+        <h1>Ziyu Yang</h1>
+        <p class="contact-info">
+            <strong>Wuhan University of Technology</strong> | Computer Science and Technology<br>
+            Email: <a href="mailto:yzy05_1223@whut.edu.cn">yzy05_1223@whut.edu.cn</a> | 
+            GitHub: <a href="https://github.com/SunnyShi051223" target="_blank">SunnyShi051223</a>
+        </p>
+        <p><strong>Research Interests:</strong> Computer Vision / Embodied AI / Intelligent Perception</p>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Wuhan University of Technology</span>
+                <span class="item-date">Sep. 2023 - Jun. 2027 (Expected)</span>
+            </div>
+            <div class="item-subtitle">B.E. in Computer Science and Technology</div>
+            <ul>
+                <li><span class="highlight">GPA:</span> 3.976 / 5.0 (Core GPA)</li>
+                <li><span class="highlight">Core Courses:</span> Advanced Language Programming (98.5), Algorithm Analysis and Design (95.4), Computer Organization and Architecture (93.0), Data Structures (90.4), Operating Systems (92.9), Machine Learning and Data Mining (92.8).</li>
+                <li><span class="highlight">English Proficiency:</span> CET-6 (497)</li>
+                <li><span class="highlight">Honors:</span> University-level Merit Student, Second-Class Scholarship, Third-Class Scholarship, Outstanding Student Leader of the College.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Research Experience</h2>
+        
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Cooperative Positioning of Intelligent Connected Vehicles under Restricted Satellite Signals</span>
+                <span class="item-date">Jan. 2024 - Present</span>
+            </div>
+            <div class="item-subtitle">National Natural Science Foundation of China (NSFC) Project | Core Member</div>
+            <ul>
+                <li>Designed a pose estimation algorithm based on UWB/IMU loose coupling, and introduced a Deep Learning Residual Network to process Non-Line-of-Sight (NLOS) noise, resolving positioning errors in satellite-restricted environments.</li>
+                <li>Redesigned the message communication protocol based on Beidou Short Message Communication Services, and developed a ZSTD-based compression coding algorithm to achieve real-time, low-latency distribution of PPP-B2b-RTK high-precision correction data.</li>
+                <li><strong>[Patent]</strong> A UWB Ranging and Positioning Method and System for Underground Environments (CN120583505), Apr. 2025.</li>
+                <li><strong>[Award]</strong> National 2nd Prize, The 19th "Challenge Cup" National College Student Extracurricular Academic Science and Technology Contest, Oct. 2025.</li>
+            </ul>
+        </div>
+
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Uncertainty Quantification Method for Driving Environment State Estimation</span>
+                <span class="item-date">Dec. 2023 - Present</span>
+            </div>
+            <div class="item-subtitle">National Key R&D Program Sub-project | Core Member</div>
+            <ul>
+                <li>Constructed a multi-source data fusion perception architecture (GNSS/INS/Vision/Mag) and achieved high-frequency pose updating based on Error-State Kalman Filter (ESKF), providing centimeter-level state feedback for downstream control.</li>
+                <li>Designed an obstacle avoidance planning algorithm based on Adaptive Large Neighborhood Search (ALNS), and trained an FCN network to fit kinematic constraints, achieving real-time path planning in restricted spaces.</li>
+                <li><strong>[Patent]</strong> A Multi-sensor Fusion Positioning Method and Device (CN120703769), Mar. 2025.</li>
+                <li><strong>[Patent]</strong> A Path Planning Method and Device for Unmanned Transport Vehicles (CN202511228219.1), May 2025.</li>
+                <li><strong>[Award]</strong> National 2nd Prize, The 18th Chinese Collegiate Computing Competition, Jul. 2025.</li>
+            </ul>
+        </div>
+
+        <div class="section-item">
+            <div class="item-header">
+                <span class="item-title">Smart Agriculture Auxiliary Decision System</span>
+                <span class="item-date">Jul. 2025 - Nov. 2025</span>
+            </div>
+            <div class="item-subtitle">Project Leader</div>
+            <ul>
+                <li>Constructed a Retrieval-Augmented Generation (RAG) memory module based on LangChain and Milvus, equipping the Agent with professional agricultural knowledge.</li>
+                <li>Improved the lightweight vision model RepViT to achieve real-time disease recognition on edge devices.</li>
+                <li>Integrated dialect Automatic Speech Recognition (ASR) with LLM intent understanding, lowering the interaction barrier (Dialect-Text-LLM) for individual farmers.</li>
+                <li><strong>[Award]</strong> National 3rd Prize, The 7th Global Campus AI Algorithm Elite Competition, Nov. 2025.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Other Competitions</h2>
+        <ul>
+            <li><strong>National 2nd Prize</strong> | The 16th Chinese Mathematics Competitions (CMC), Nov. 2024</li>
+            <li><strong>Provincial 2nd Prize</strong> | The 17th "Huazhong Cup" Mathematical Modeling Challenge, May 2025</li>
+            <li><strong>Provincial 3rd Prize</strong> | CUMCM (Contemporary Undergraduate Mathematical Contest in Modeling), Sep. 2025</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Research Tools:</strong> LaTeX, MATLAB, Zotero</li>
+            <li><strong>Algorithm Skills:</strong> Deep Learning, Machine Learning, Reinforcement Learning, Computer Vision, Optimization Algorithms</li>
+            <li><strong>Programming Languages:</strong> C/C++, Python</li>
+        </ul>
+    </section>
+
+</body>
+</html>
