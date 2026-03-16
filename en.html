@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziyu Yang - Homepage</title>
+    <title>Ziyu Yang's Space</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            /* Center content vertically and horizontally */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3436;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,15 +16,14 @@
             margin: 0;
             line-height: 1.8;
         }
-        .container {
-            background-color: #fff;
-            padding: 40px 50px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            max-width: 650px;
-            text-align: justify;
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            max-width: 600px;
+            width: 90%;
             position: relative;
-            margin: 20px;
         }
         .lang-switch {
             position: absolute;
@@ -34,56 +32,73 @@
         }
         .lang-switch a {
             text-decoration: none;
-            color: #3498db;
+            color: #0984e3;
             font-size: 0.9em;
-            border: 1px solid #3498db;
-            padding: 4px 10px;
-            border-radius: 6px;
-            transition: all 0.3s;
+            font-weight: bold;
+            background: #e1f0fa;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: all 0.2s;
         }
         .lang-switch a:hover {
-            background-color: #3498db;
+            background: #0984e3;
             color: #fff;
         }
         h1 {
-            color: #2c3e50;
-            text-align: center;
+            color: #2d3436;
             margin-bottom: 5px;
-            margin-top: 0;
+            font-size: 2.2em;
         }
         .subtitle {
-            text-align: center;
-            color: #7f8c8d;
-            margin-bottom: 25px;
-            font-size: 0.95em;
+            color: #636e72;
+            margin-bottom: 30px;
+            font-size: 1em;
         }
         .subtitle a {
-            color: #3498db;
+            color: #0984e3;
             text-decoration: none;
+            font-weight: bold;
         }
-        .subtitle a:hover {
-            text-decoration: underline;
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        p {
+        .info-list li {
+            margin-bottom: 15px;
             font-size: 1.05em;
+            display: flex;
+            align-items: flex-start;
+        }
+        .emoji {
+            margin-right: 12px;
+            font-size: 1.2em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0984e3;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="card">
         <div class="lang-switch">
-            <a href="index.html">中 文</a>
+            <a href="index.html">中 文 🐼</a>
         </div>
         
-        <h1>Ziyu Yang</h1>
+        <h1>Ziyu Yang [cite: 1]</h1>
         <div class="subtitle">
-            Wuhan University of Technology · Computer Science<br>
-            <a href="mailto:yzy05_1223@whut.edu.cn">yzy05_1223@whut.edu.cn</a> | <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
+            <a href="mailto:yzy05_1223@whut.edu.cn">Email</a> | 
+            <a href="https://github.com/SunnyShi051223" target="_blank">GitHub</a>
         </div>
         
-        <p>
-            Hi, I'm Ziyu Yang, an undergraduate student majoring in Computer Science and Technology at Wuhan University of Technology (2023-2027) with a core GPA of 3.976/5.0. My research interests focus on <strong>Computer Vision, Embodied AI, and Intelligent Perception</strong>. During my studies, I have participated as a core member in national-level research projects, including cooperative positioning for intelligent connected vehicles and uncertainty quantification for driving environments, and led the development of a smart agriculture auxiliary decision system. Through these projects and various national competitions, I have gained extensive experience in multi-sensor fusion, path planning, and LLM applications, resulting in multiple patents. Proficient in C/C++, Python, and deep learning algorithms, I look forward to continuing my exploration in academic research.
-        </p>
+        <ul class="info-list">
+            <li><span class="emoji">👋</span> <span><strong>Hi there!</strong> I'm Ziyu Yang, a junior majoring in Computer Science at Wuhan University of Technology. </span></li>
+            <li><span class="emoji">🔍</span> <span><strong>Research Radar:</strong> Computer Vision / Embodied AI / Intelligent Perception. Teaching machines to understand the world is my ultimate jam! [cite: 6]</span></li>
+            <li><span class="emoji">🛠️</span> <span><strong>What I Build:</strong> Engineered fusion localization algorithms for autonomous vehicles, developed LLM Agents for smart agriculture, and grabbed a few national awards & patents along the way. [cite: 21, 22, 25, 30, 32, 37]</span></li>
+            <li><span class="emoji">💻</span> <span><strong>Tech Stack:</strong> Fluent in C/C++ and Python, always ready to cast spells with DL/ML/CV algorithms. [cite: 44, 45]</span></li>
+            <li><span class="emoji">🎓</span> <span><strong>Status:</strong> Currently gearing up for grad school recommendations—looking for an awesome lab where I can make an impact (and write cool code)!</span></li>
+        </ul>
     </div>
 </body>
 </html>
